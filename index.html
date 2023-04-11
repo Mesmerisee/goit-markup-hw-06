@@ -10,9 +10,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/mobile.css" />
-    <link rel="stylesheet" href="./css/tablet.css" />
-    <link rel="stylesheet" href="./css/desktop.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,10 +20,10 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <a href="./index.html" class="header-link link"
-          ><span class="header-link-span">Web</span>Studio</a
-        >
         <nav class="header-navigation">
+          <a href="./index.html" class="header-link link"
+            ><span class="header-link-span">Web</span>Studio</a
+          >
           <ul class="header-list list">
             <li class="header-item">
               <a href="./index.html" class="header-item-link text link active"
@@ -61,24 +58,19 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="menu-open-button js-open-menu">
-          <svg class="menu-open-item" width="32px" height="22px">
-            <use href="./images/symbol-defs.svg#icon-menu"></use>
-          </svg>
-        </button>
       </div>
     </header>
     <main>
       <!-- Hero section -->
       <section class="hero">
-        <div class="hero-container container">
+        <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" data-modal-open class="hero-button">
             Order Service
           </button>
         </div>
       </section>
-
+      <!-- /Hero section -->
       <!-- Services section -->
       <section class="services">
         <div class="container services-container">
@@ -90,13 +82,11 @@
                   <use href="./images/symbol-defs.svg#icon-strategy"></use>
                 </svg>
               </div>
-              <div class="services-block">
-                <h3 class="services-subtitle">Strategy</h3>
-                <p class="services-description text">
-                  Our goal is to identify the business problem to walk away with
-                  the perfect and creative solution.
-                </p>
-              </div>
+              <h3 class="services-subtitle">Strategy</h3>
+              <p class="services-description text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
             </li>
             <li class="services-item">
               <div class="services-icon-link">
@@ -104,13 +94,11 @@
                   <use href="./images/symbol-defs.svg#icon-punctuality"></use>
                 </svg>
               </div>
-              <div class="services-block">
-                <h3 class="services-subtitle">Punctuality</h3>
-                <p class="services-description text">
-                  Bring the key message to the brand's audience for the best
-                  price within the shortest possible time.
-                </p>
-              </div>
+              <h3 class="services-subtitle">Punctuality</h3>
+              <p class="services-description text">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
             </li>
             <li class="services-item">
               <div class="services-icon-link">
@@ -118,13 +106,11 @@
                   <use href="./images/symbol-defs.svg#icon-diligence"></use>
                 </svg>
               </div>
-              <div class="services-block">
-                <h3 class="services-subtitle">Diligence</h3>
-                <p class="services-description text">
-                  Research and confirm brands that present the strongest digital
-                  growth opportunities and minimize risk.
-                </p>
-              </div>
+              <h3 class="services-subtitle">Diligence</h3>
+              <p class="services-description text">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
             </li>
             <li class="services-item">
               <div class="services-icon-link">
@@ -132,29 +118,23 @@
                   <use href="./images/symbol-defs.svg#icon-technologies"></use>
                 </svg>
               </div>
-              <div class="services-block">
-                <h3 class="services-subtitle">Technologies</h3>
-                <p class="services-description text">
-                  Design practice focused on digital experiences. We bring forth
-                  a deep passion for problem-solving.
-                </p>
-              </div>
+              <h3 class="services-subtitle">Technologies</h3>
+              <p class="services-description text">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
             </li>
           </ul>
         </div>
       </section>
-
-      <!-- Services pictures section
+      <!-- /Services section -->
+      <!-- Services pictures section -->
       <section class="gallery">
         <div class="container">
           <h2 class="gallery-title">What are we doing</h2>
           <ul class="gallery-list list gallery-content">
             <li class="gallery-item">
               <img
-                srcset="
-                  ./images/services-1.jpg    1x,
-                  ./images/services-1-2x.jpg 2x
-                "
                 src="./images/services-1.jpg"
                 alt="Services"
                 width="360"
@@ -163,10 +143,6 @@
             </li>
             <li class="gallery-item">
               <img
-                srcset="
-                  ./images/services-2.jpg    1x,
-                  ./images/services-2-2x.jpg 2x
-                "
                 src="./images/services-2.jpg"
                 alt="Services"
                 width="360"
@@ -175,10 +151,6 @@
             </li>
             <li class="gallery-item">
               <img
-                srcset="
-                  ./images/services-3.jpg    1x,
-                  ./images/services-3-2x.jpg 2x
-                "
                 src="./images/services-3.jpg"
                 alt="Services"
                 width="360"
@@ -188,15 +160,14 @@
           </ul>
         </div>
       </section>
-       -->
-      <!-- Team section
+      <!-- /Services pictures section -->
+      <!-- Team section -->
       <section class="team">
         <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img
-                srcset="./images/team-1.jpg 1x, ./images/team-1-2x.jpg 2x"
                 src="./images/team-1.jpg"
                 alt="Team"
                 width="264"
@@ -245,7 +216,6 @@
             </li>
             <li class="team-item">
               <img
-                srcset="./images/team-2.jpg 1x, ./images/team-2-2x.jpg 2x"
                 src="./images/team-2.jpg"
                 alt="Team"
                 width="264"
@@ -294,7 +264,6 @@
             </li>
             <li class="team-item">
               <img
-                srcset="./images/team-3.jpg 1x, ./images/team-3-2x.jpg 2x"
                 src="./images/team-3.jpg"
                 alt="Team"
                 width="264"
@@ -343,7 +312,6 @@
             </li>
             <li>
               <img
-                srcset="./images/team-4.jpg 1x, ./images/team-4-2x.jpg 2x"
                 src="./images/team-4.jpg"
                 alt="Team"
                 width="264"
@@ -393,12 +361,10 @@
           </ul>
         </div>
       </section>
-       -->
-      <!--Customers section
+      <!--Customers section-->
       <section class="customers">
         <div class="container">
           <h2 class="customers-subtitle">Customers</h2>
-
           <ul class="customers-list list">
             <li class="customers-item">
               <a class="customers-link link" href="">
@@ -445,9 +411,8 @@
           </ul>
         </div>
       </section>
-      -->
+      <!-- /Team section -->
     </main>
-    <!-- footer 
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-main-container">
@@ -510,8 +475,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
-    <!-- Modal
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-close-button">
@@ -528,7 +492,6 @@
               <use href="./images/symbol-defs.svg#icon-user"></use>
             </svg>
           </div>
-
           <label for="phone" class="modal-label">Phone</label>
           <div class="modal-form-group">
             <input
@@ -541,7 +504,6 @@
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg>
           </div>
-
           <label for="email" class="modal-label">Email</label>
           <div class="modal-form-group">
             <input
@@ -562,7 +524,6 @@
             class="modal-form-textarea"
             placeholder="Text input"
           ></textarea>
-
           <label for="policy" class="modal-check-label">
             <input
               type="checkbox"
@@ -583,81 +544,8 @@
           <button type="submit" class="modal-form-button">Send</button>
         </form>
       </div>
-    </div>  -->
-    <!-- Menu 
-    <div class="mobile-menu is-hidden js-menu-container">
-      <button type="button" class="menu-close-button js-close-menu">
-        <svg class="menu-close-item" width="8px" height="8px">
-          <use href="./images/symbol-defs.svg#icon-close-button"></use>
-        </svg>
-      </button>
-      <div class="menu-container">
-        <nav class="menu-navigation">
-          <ul class="menu-list list">
-            <li class="menu-item">
-              <a href="./index.html" class="menu-item-link text link">Studio</a>
-            </li>
-            <li class="menu-item">
-              <a href="./portfolio.html" class="menu-item-link text link"
-                >Portfolio</a
-              >
-            </li>
-            <li class="menu-item">
-              <a href="" class="menu-item-link text link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="menu-address">
-          <ul class="menu-address-list list">
-            <li class="menu-address-list-item">
-              <a
-                href="tel:+110001111111"
-                class="menu-address-list-phone text link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li class="menu-address-list-item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="menu-address-list-link text link"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        <ul class="menu-social-list list">
-          <li class="menu-social-item">
-            <a href="" class="menu-social-link link">
-              <svg class="menu-social-icon">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="menu-social-item">
-            <a href="" class="menu-social-link link">
-              <svg class="menu-social-icon">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="menu-social-item">
-            <a href="" class="menu-social-link link">
-              <svg class="menu-social-icon">
-                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="menu-social-item">
-            <a href="" class="menu-social-link link">
-              <svg class="menu-social-icon">
-                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div> -->
+    </div>
+    </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
